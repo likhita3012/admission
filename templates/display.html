@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySQL Table Data</title>
+</head>
+<style>
+    body{
+
+    background-image: url('static/images/clz13.jpg');
+    background-size: cover;
+}</style>
+</body>
+    <center><h1>ADMISSION PROCESS UNIVERSITY DATA</h1></center><br><br>
+    <form method="post" action="/submit">
+    <center><table border="1">
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>Email</th>
+                <th>Location</th>
+                <th>NAAC</th>
+                <th>Ranking</th>
+                <th>Cutoff</th>
+                <th>Scholardetails</th>
+                <th>Placementrate</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+                <tr>
+                    <td>{{ row[0] }}</td>
+                    <td>{{ row[1] }}</td>
+                    <td>{{ row[2] }}</td>
+                    <td>{{ row[3] }}</td>
+                    <td>{{ row[4] }}</td>
+                    <td>{{ row[5] }}</td>
+                    <td>{{ row[6] }}</td>
+                    <td>{{ row[7] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table></center>
+</body>
+</html>

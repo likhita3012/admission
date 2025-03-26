@@ -1,0 +1,6 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/static/images/clz5.jpg'); /* Adjust the path to your image file */
+    background-size: cover; /* Ensure the background image covers the entire body */
+    
+}
